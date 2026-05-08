@@ -1,0 +1,95 @@
+/* Paleta de Colores Extraída */
+:root {
+    --eko-bg: #D6C5B0;      /* El color crema de fondo */
+    --eko-green: #849469;    /* El verde de 'Ekó Sensible' */
+    --eko-dark-blue: #2E5266; /* El azul de 'Ekó Menta' */
+    --eko-text: #4A3728;     /* Marrón oscuro para títulos */
+    --eko-white: #F4F1EA;    /* Blanco roto para secciones */
+}
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif; /* Serif para ese toque elegante */
+    background-color: var(--eko-bg);
+    color: var(--eko-text);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--eko-text);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--eko-text);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Secciones Curvas (Estilo de tus imágenes) */
+.hero, .about, .contact-section {
+    padding: 60px 10%;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Botón con el estilo de la imagen */
+button, .btn-style {
+    background-color: var(--eko-green);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px; /* Botones ovalados */
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Formulario Estilo Ekó */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: var(--eko-white);
+    padding: 40px;
+    border-radius: 50px 0 50px 0; /* Curvas asimétricas como en tus piezas */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 10px;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
